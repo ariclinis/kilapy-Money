@@ -81,8 +81,22 @@
 
 </div>
 
+<!-- inicio da Listagem de emprestadores -->
+
+<div class="panel panel-default">
+
+  <div class="panel-heading">Encontra emprestimos proximo de ti</div>
+  <div class="panel-body">
+    <p>...</p>
+  </div>
 
 
+  <table class="table">
+    ...
+  </table>
+</div>
+
+<!--- Termina Listagem de emprestadores -->
       <!--- Termina Agora -->
     </div>
     <div class="col-sm-2 sidenav">
