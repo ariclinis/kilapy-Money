@@ -78,8 +78,15 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="{{ route('register') }}" target="_blank"><i class="fa fa-check-square-o"></i> Cadastre-se</a></li>
-            <li><a href="{{ route('login') }}"><i class="fa fa-user"></i> Entrar</a></li>
+<li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Conta <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="download">
+                <li><a href="{{ route('sobre')}}">Minha conta</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Sair</a></li>
+
+              </ul>
+            </li>
           </ul>
 
         </div>
@@ -99,23 +106,8 @@
     </div>
     <footer class="navbar-default footer" style="position: relative;bottom: 0;margin: 0;width: 100%; padding: 0;" >
       <div class="container">
+<p>nada</p>
 
-
-        <table class="table">
-         <thead>
-      <tr>
-        <th> <span class="text-muted"><h4>Porquê Nós?</h4> </span>
-        </th>
-          <th>
-          <span class="text-muted"><h4>Contactos</h4> </span>
-          </th>
-          <th>
-            <span class="text-muted"><h4>Siga-nos</h4> </span>
-          </th>
-      </tr>
-         </thead>
-    </tbody>
-        </table>
 </div>
     </footer>
 
