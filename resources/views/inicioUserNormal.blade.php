@@ -38,7 +38,7 @@
           </div>
         </div>
       </div>
-      <a href="http://mwonowaha.herokuapp.com/ajudas">
+      <a href="#">
         <div class="panel-footer announcement-bottom">
           <div class="row">
             <div class="col-xs-8">
@@ -65,7 +65,7 @@
           </div>
         </div>
       </div>
-      <a href="http://mwonowaha.herokuapp.com/ajudas">
+      <a href="#">
         <div class="panel-footer announcement-bottom">
           <div class="row">
             <div class="col-xs-8">
