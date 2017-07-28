@@ -2,12 +2,14 @@
 @extends('vendacompra/templete/templete')
 @section('conteudo')
 <br>
-<ol class="breadcrumb">
+<ol class="breadcrumb" >
   <li><a href="/">Início</a></li>
   <li class="active">...</li>
 </ol>
   <div class="row content">
+
     <div class="col-sm-2 sidenav">
+
       <div class="list-group">
   <a href="#" class="list-group-item active">
     <i class="fa fa-university" aria-hidden="true"></i> Minha conta
@@ -18,6 +20,7 @@
  A tua rede</a>
   <a href="#" class="list-group-item"><i class="fa fa-balance-scale" aria-hidden="true"></i>Nossos Socios</a>
 </div>
+
     </div>
     <div class="col-sm-8 text-left">
       <!--- Menu do meio -->
@@ -38,11 +41,11 @@
       <a href="http://mwonowaha.herokuapp.com/ajudas">
         <div class="panel-footer announcement-bottom">
           <div class="row">
-            <div class="col-xs-6">
+            <div class="col-xs-8">
               <font color="red">Concluir activação da conta.</font>
             </div>
-            <div class="col-xs-6 text-right">
-              <i class="fa fa-arrow-circle-right"></i>
+            <div class="col-xs-4 text-right">
+              <i class="fa fa-hand-o-right" aria-hidden="true"></i>
             </div>
           </div>
         </div>
@@ -65,11 +68,11 @@
       <a href="http://mwonowaha.herokuapp.com/ajudas">
         <div class="panel-footer announcement-bottom">
           <div class="row">
-            <div class="col-xs-6">
+            <div class="col-xs-8">
              <font color="red"> Concluir activação da conta.</font>
             </div>
-            <div class="col-xs-6 text-right">
-              <i class="fa fa-arrow-circle-right"></i>
+            <div class="col-xs-4 text-right">
+              <i class="fa fa-hand-o-right" aria-hidden="true"></i>
             </div>
           </div>
         </div>
@@ -83,6 +86,15 @@
       <!--- Termina Agora -->
     </div>
     <div class="col-sm-2 sidenav">
+
+    <div class="thumbnail">
+      <img src="./img/user.PNG" alt="...">
+      <div class="caption">
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Carregue sua foto</a></p>
+      </div>
+    </div>
+
       <div class="well">
         <p>ADS</p>
       </div>
