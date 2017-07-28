@@ -32,14 +32,8 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"><i class="fa fa-calendar-o"></i> Simulação <span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="download">
-                <li><a href="#">Simulação de empréstimo.</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Simulação de investimo</a></li>
-
-              </ul>
+            <li>
+              <a href="#"> <i class="fa fa-street-view"></i> Simulação</a>
             </li>
                          <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"><i class="fa fa-calendar-o"></i> Requisitos <span class="caret"></span></a>
