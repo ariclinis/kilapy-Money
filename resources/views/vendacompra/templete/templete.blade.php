@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>@yield('titulo','kilapi Money')</title>
+    <title>@yield('titulo','kilapy Money')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <link rel="stylesheet" href="{{ asset('./css/bootstrap.css')}}" media="screen">
     <link rel="stylesheet" href="{{ asset('../assets/css/custom.min.css')}}">
     <link rel="stylesheet" href="{{ asset('./css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('./css/kilapy.css')}}">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -16,6 +18,7 @@
     <![endif]-->
   </head>
   <body>
+
     <div class="navbar navbar-default navbar-fixed-top">
     <div style="padding: 0;margin: 0;width: 200px;height: 40px;float: left;"><img src="./img/logo.PNG" style="float: left;margin-top: 6px;" width="40">
     <a href="../" class="navbar-brand" style="float: left;"><b>Kilapy Money</b> </a>
@@ -84,7 +87,7 @@
     </div>
 
 
-    <div class="container" style="min-height: 100%;margin: 0;width: 100%; padding: 0;">
+    <div class="container container-fluid text-center" style="min-height: 100%;margin: 0;width: 98.5%; padding: 0;">
 
 
 
@@ -101,36 +104,19 @@
         <table class="table">
          <thead>
       <tr>
-        <th> <span class="text-muted"><h3>Porquê Nós?</h3> </span>
+        <th> <span class="text-muted"><h4>Porquê Nós?</h4> </span>
         </th>
           <th>
-          <span class="text-muted"><h3>Contactos</h3> </span>
+          <span class="text-muted"><h4>Contactos</h4> </span>
           </th>
           <th>
-            <span class="text-muted"><h3>Siga-nos</h3> </span>
+            <span class="text-muted"><h4>Siga-nos</h4> </span>
           </th>
       </tr>
          </thead>
-         <tbody>
-      <tr>
-        <td><span class="text-muted">Os melhores</span></td>
-        <td><span class="text-muted">9xxxxxxx</span></td>
-        <td><span class="text-muted"><i class="fa fa-facebook-official" aria-hidden="true"></i>
- Facebook</span></td>
-      </tr>
-      <tr>
-        <td><span class="text-muted">sem medo</span></td>
-        <td><span class="text-muted">norada</span></td>
-        <td><span class="text-muted"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</span></td>
-      </tr>
-      <tr>
-        <td><span class="text-muted">blablabla</span></td>
-        <td><span class="text-muted">mary@m2g.com</span></td>
-        <td><span class="text-muted"><i class="fa fa-instagram" aria-hidden="true"></i> Instagrem</span></td>
-      </tr>
     </tbody>
         </table>
-
+</div>
     </footer>
 
 
