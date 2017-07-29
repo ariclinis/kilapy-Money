@@ -30,7 +30,6 @@
     26 => 'App\\Providers\\RouteServiceProvider',
     27 => 'Way\\Generators\\GeneratorsServiceProvider',
     28 => 'Xethron\\MigrationsGenerator\\MigrationsGeneratorServiceProvider',
-    29 => 'Collective\\Html\\HtmlServiceProvider',
   ),
   'eager' => 
   array (
@@ -143,10 +142,6 @@
     'validator' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'command.tinker' => 'Laravel\\Tinker\\TinkerServiceProvider',
-    'html' => 'Collective\\Html\\HtmlServiceProvider',
-    'form' => 'Collective\\Html\\HtmlServiceProvider',
-    'Collective\\Html\\HtmlBuilder' => 'Collective\\Html\\HtmlServiceProvider',
-    'Collective\\Html\\FormBuilder' => 'Collective\\Html\\HtmlServiceProvider',
   ),
   'when' => 
   array (
@@ -187,9 +182,6 @@
     array (
     ),
     'Laravel\\Tinker\\TinkerServiceProvider' => 
-    array (
-    ),
-    'Collective\\Html\\HtmlServiceProvider' => 
     array (
     ),
   ),
