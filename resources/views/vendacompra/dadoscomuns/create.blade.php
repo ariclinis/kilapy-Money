@@ -7,6 +7,7 @@
 </ol>
 <form>
 <div class="row">
+<div class="col-xs-12 col-sm-2"></div>
 <div class="col-xs-12 col-sm-4">
 <div class="panel panel-primary">
 
@@ -33,14 +34,6 @@
 
 </div>
 
-       <div class="input-group input-sm">
-        <span class="input-group-addon">Provincia de Nascimento</span>
-       <select class="form-control input-sm" id="provincia">
-                         @foreach($provincias as $provincia)
-                            <option value="{{$provincia->id}}">{{$provincia->des_provincia}}</option>
-                            @endforeach
-                 </select>
-    </div>
             <div class="input-group input-sm">
                 <span class="input-group-addon">Estado Civil</span>
                 <select class="form-control input-sm" id="estado_civil">
@@ -64,13 +57,7 @@
         <span class="input-group-addon">Nº de identificação</span>
         <input type="text" class="form-control input-sm" id="n_bi" name="n_bi" placeholder="BI ou Passaporte">
     </div>
-    <div class="input-group input-sm">
-        <span class="input-group-addon">Data Emissão</span>
-       <div class='input-group date' id='datetimepicker1'>
-                    <input type='date' id="data_emissao" class="form-control input-sm" />
 
-            </div>
-</div>
     <div class="input-group input-sm">
         <span class="input-group-addon">NIF</span>
         <input type="text" class="form-control input-sm" id="nif" name="nif" placeholder="Nº de identificação fiscal">
@@ -128,23 +115,28 @@
                             @endforeach
                  </select>
                              </div>
+                                         <div class="input-group input-sm">
+    <span class="input-group-addon">Informação extra</span>
+    <textarea class="form-control input-sm" id="fax" name="fax" placeholder="Ex: Casa de portão azul, email inactivo no momento, etc."></textarea>
+            </div>
 </div>
   </div>
   </div>
 
   </div>
   <div class="row">
+  <div class="col-xs-12 col-sm-2"></div>
 <div class="col-xs-12 col-sm-8">
 
 
-<div class="panel panel-default">
+<div class="panel panel-primary">
 
   <div class="panel-body">
 
 
-    <button type="button" class="btn btn-info">Concluir Informação</button>
+    <button type="button" class="btn btn-info"><i class="fa fa-floppy-o" aria-hidden="true"></i> Concluir Informação</button>
 
-    <button type="button" class="btn btn-danger">Concluir mas tarde</button>
+    <button type="button" class="btn btn-danger"><i class="fa fa-repeat" aria-hidden="true"></i> Concluir mas tarde</button>
 
 </div>
 </div>
@@ -163,6 +155,7 @@
 
 
 </form>
+
         <script type="text/javascript">
             $(function () {
                 $('#datetimepicker1').datetimepicker();
