@@ -17,15 +17,15 @@ class DadosComuns extends Migration
         Schema::create('dados_comuns', function(Blueprint $table)
         {
             $table->increments('id');
-            $table->string('nome', 250);
+            $table->string('nome', 100);
             $table->date('data_nasc');
             $table->integer('idade');
             $table->enum('genero', ['Masculino', 'Femenino']);
-            $table->string('nacionalidade', 250);
+            $table->string('nacionalidade', 40);
             $table->enum('estado_civil', ['Solteiro/a', 'Casado/a','Divorciado/a','Vivu/a']);
-            $table->string('n_bi')->unique();
+            $table->string('n_bi', 40)->unique();
             $table->date('data_emissao');
-            $table->string('nif', 250);
+            $table->string('nif', 40);
             $table->text('foto');
             $table->integer('provincia_id')->unsigned();
             $table->foreign('provincia_id')->references('id')->on('provincias');
