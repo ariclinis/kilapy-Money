@@ -15,15 +15,15 @@ class ProcessamentosCredores extends Migration
     {
         Schema::create('processamentos_credores', function(Blueprint $table)
         {
-            $table->increments('id', true);
+            $table->increments('id');
             $table->integer('credore_id')->unsigned();
             $table->foreign('credore_id')->references('id')->on('credores');
-            $table->double('valor_investir');
+            $table->float('valor_investir');
             $table->string('finalidade', 200);
             $table->string('tempo_invest', 200);
-            $table->double('taxa');
-            $table->double('juros');
-            $table->double('total_receber');
+            $table->float('taxa');
+            $table->float('juros');
+            $table->float('total_receber');
             $table->date('data_processamento');
             $table->date('data_deposito');
             $table->string('estado_processamento', 30);

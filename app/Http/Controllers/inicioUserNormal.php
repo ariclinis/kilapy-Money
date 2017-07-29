@@ -13,6 +13,8 @@ class InicioUserNormal extends Controller {
 	public function index()
 	{
 		//
+		$user = \Auth::user();
+		dd($user);
 		return view('inicioUserNormal');
 	}
 

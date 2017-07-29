@@ -21,7 +21,7 @@
     <a href="../" class="navbar-brand" style="float: left;"><b>Kilapy Money</b> </a>
     </div>
 
-      <div class="container">
+      <div class="container" style="margin-right: 0;">
         <div class="navbar-header">
 
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">

@@ -18,13 +18,13 @@ class ProcessamentosEmprestimos extends Migration
             $table->increments('id');
             $table->date('data_avaliacao');
             $table->string('estado_avaliacao', 100);
-            $table->double('valor_desejado');
+            $table->float('valor_desejado');
             $table->string('tempo_apagar', 150);
             $table->string('finalidade', 250);
-            $table->double('taxa');
-            $table->double('juros');
-            $table->double('valor_apagar');
-            $table->double('parcelasmes');
+            $table->float('taxa');
+            $table->float('juros');
+            $table->float('valor_apagar');
+            $table->float('parcelasmes');
             $table->date('data_processamento');
             $table->date('data_pagamento');
             $table->string('estado_pagamento', 100);

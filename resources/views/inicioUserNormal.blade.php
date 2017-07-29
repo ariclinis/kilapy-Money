@@ -20,7 +20,16 @@
  A tua rede</a>
   <a href="#" class="list-group-item"><i class="fa fa-balance-scale" aria-hidden="true"></i>Nossos Socios</a>
 </div>
-
+      <div class="list-group">
+  <a href="#" class="list-group-item active">
+    <i class="fa fa-university" aria-hidden="true"></i> Minha conta
+  </a>
+  <a href="#" class="list-group-item"><i class="fa fa-money" aria-hidden="true"></i> Investidores</a>
+  <a href="#" class="list-group-item"><i class="fa fa-pie-chart" aria-hidden="true"></i> Emprestimos</a>
+  <a href="#" class="list-group-item"><i class="fa fa-sitemap" aria-hidden="true"></i>
+ A tua rede</a>
+  <a href="#" class="list-group-item"><i class="fa fa-balance-scale" aria-hidden="true"></i>Nossos Socios</a>
+</div>
     </div>
     <div class="col-sm-8 text-left">
       <!--- Menu do meio -->

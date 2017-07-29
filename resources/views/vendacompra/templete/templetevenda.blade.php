@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{{ asset('../assets/css/custom.min.css')}}">
     <link rel="stylesheet" href="{{ asset('./css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{ asset('./css/kilapy.css')}}">
+    <link rel="stylesheet" href="{{ asset('./css/datepicker.css')}}">
+    <link rel="stylesheet" href="{{ asset('./css/datepicker.css')}}">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -20,11 +22,11 @@
   <body>
 
     <div class="navbar navbar-default navbar-fixed-top">
-    <div style="padding: 0;margin: 0;width: 200px;height: 40px;float: left;"><img src="./img/logo.PNG" style="float: left;margin-top: 6px;" width="40">
+    <div style="padding: 0;margin: 0;width: 200px;height: 40px;float: left;"><img src=".././img/logo.PNG" style="float: left;margin-top: 6px;" width="40">
     <a href="../" class="navbar-brand" style="float: left;"><b>Kilapy Money</b> </a>
     </div>
 
-      <div class="container">
+      <div class="container" style="margin-right: 0;">
         <div class="navbar-header">
 
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
@@ -77,7 +79,7 @@
             </li> -->
           </ul>
 
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right" >
 <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Conta <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="download">
@@ -114,6 +116,8 @@
 
     <script src="{{ asset('./js/jquery-1.10.2.min.js')}}"></script>
     <script src="{{ asset('./js/bootstrap.min.js')}}"></script>
+        <script src="{{ asset('./js/bootstrap-datepicker.js')}}"></script>
     <script src="{{ asset('../assets/js/custom.js')}}"></script>
+
     <script>/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/\>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
 </html>

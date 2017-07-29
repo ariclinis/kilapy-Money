@@ -13,7 +13,9 @@ class inicioUserNormal extends Controller {
 	public function index()
 	{
 		//
-		return view('/vendacompra/inicioUserNormal');
+		$user = \Auth::user();
+		//dd($user);
+		return view('vendacompra.inicioUserNormal',compact($user));
 	}
 
 	/**
