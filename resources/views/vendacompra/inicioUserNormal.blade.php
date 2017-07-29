@@ -2,10 +2,7 @@
 @extends('vendacompra/templete/templetevenda')
 @section('conteudo')
 <br>
-<ol class="breadcrumb" >
-  <li><a href="/">Início</a></li>
-  <li class="active">...</li>
-</ol>
+
   <div class="row content">
 
     <div class="col-sm-2 sidenav">

@@ -1,11 +1,14 @@
 @extends('vendacompra.templete.templetevenda')
 @section('conteudo')
 <br>
-
+    <ol class="breadcrumb" >
+  <li><a href="/">Início</a></li>
+  <li class="active">...</li>
+</ol>
 <form>
 <div class="row">
 <div class="col-xs-12 col-sm-4">
-<div class="panel panel-default">
+<div class="panel panel-primary">
 
   <div class="panel-heading">Dados Pessoais</div>
 
@@ -27,7 +30,17 @@
                     <input type='date' id="data_nasc" name="data_nasc" class="form-control input-sm" />
 
             </div>
+
 </div>
+
+       <div class="input-group input-sm">
+        <span class="input-group-addon">Provincia de Nascimento</span>
+       <select class="form-control input-sm" id="provincia">
+                         @foreach($provincias as $provincia)
+                            <option value="{{$provincia->id}}">{{$provincia->des_provincia}}</option>
+                            @endforeach
+                 </select>
+    </div>
             <div class="input-group input-sm">
                 <span class="input-group-addon">Estado Civil</span>
                 <select class="form-control input-sm" id="estado_civil">
@@ -62,14 +75,7 @@
         <span class="input-group-addon">NIF</span>
         <input type="text" class="form-control input-sm" id="nif" name="nif" placeholder="Nº de identificação fiscal">
     </div>
-       <div class="input-group input-sm">
-        <span class="input-group-addon">Provincia de Nascimento</span>
-       <select class="form-control input-sm" id="provincia">
-                         @foreach($provincias as $provincia)
-                            <option value="{{$provincia->id}}">{{$provincia->des_provincia}}</option>
-                            @endforeach
-                 </select>
-    </div>
+
 
 
 
@@ -77,9 +83,9 @@
     </div>
     </div>
 <div class="col-xs-12 col-sm-4">
-<div class="panel panel-default">
+<div class="panel panel-primary">
 
-  <div class="panel-heading">Dados Pessoais</div>
+  <div class="panel-heading">Dados de contacto</div>
 
   <div class="panel-body">
 
@@ -125,16 +131,35 @@
 </div>
   </div>
   </div>
+
   </div>
+  <div class="row">
+<div class="col-xs-12 col-sm-8">
+
+
+<div class="panel panel-default">
+
+  <div class="panel-body">
+
+
+    <button type="button" class="btn btn-info">Concluir Informação</button>
+
+    <button type="button" class="btn btn-danger">Concluir mas tarde</button>
+
+</div>
+</div>
+</div>
+
+
+</div>
+  </div>
+
 </div>
 
 
 
-<div class="row">
-<div class="col-xs-12 col-sm-4">
 
-</div>
-</div>
+
 
 
 </form>
