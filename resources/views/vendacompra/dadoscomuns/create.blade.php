@@ -11,7 +11,7 @@
 <div class="col-xs-12 col-sm-4">
 <div class="panel panel-primary">
 
-  <div class="panel-heading">Dados Pessoais</div>
+  <div class="panel-heading"><i class="fa fa-user-o" aria-hidden="true"></i> Dados Pessoais</div>
 
   <div class="panel-body">
                  <div class="input-group input-sm">
@@ -72,7 +72,7 @@
 <div class="col-xs-12 col-sm-4">
 <div class="panel panel-primary">
 
-  <div class="panel-heading">Dados de contacto</div>
+  <div class="panel-heading"><i class="fa fa-vcard" aria-hidden="true"></i> Dados de contacto</div>
 
   <div class="panel-body">
 
@@ -136,7 +136,7 @@
 
     <button type="button" class="btn btn-info"><i class="fa fa-floppy-o" aria-hidden="true"></i> Concluir Informação</button>
 
-    <button type="button" class="btn btn-danger"><i class="fa fa-repeat" aria-hidden="true"></i> Concluir mas tarde</button>
+    <button type="button" class="btn btn-danger"><i class="fa fa-repeat" aria-hidden="true"></i>Concluir mas tarde</button>
 
 </div>
 </div>
