@@ -18,7 +18,8 @@ class Provincias extends Migration
             $table->increments('id');
             $table->string('cod_provincia', 100);
             $table->string('des_provincia', 100);
-            $table->integer('estado');
+            $table->integer('estado_id')->unsigned();
+            $table->foreign('estado_id')->references('id')->on('tbl_estados');
             $table->string('pais', 50);
             $table->timestamps();
         });

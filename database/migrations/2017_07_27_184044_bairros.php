@@ -18,8 +18,9 @@ class Bairros extends Migration
         {
             $table->increments('id');
             $table->string('cod_bairro', 100)->unique();
-            $table->string('discricao_dairro', 100);
-            $table->string('municipio_id', 100);
+            $table->string('discricao_bairro', 100);
+            $table->integer('municipio_id')->unsigned();
+            $table->foreign('municipio_id')->references('id')->on('municipios');
             $table->integer('estado_id')->unsigned();
             $table->foreign('estado_id')->references('id')->on('tbl_estados');
             $table->timestamps();

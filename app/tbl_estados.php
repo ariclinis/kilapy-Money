@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class dadoscomuns extends Model
+class tbl_estados extends Model
 {
     //
 }

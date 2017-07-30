@@ -25,10 +25,7 @@ class DadosComuns extends Migration
             $table->enum('estado_civil', ['Solteiro/a', 'Casado/a','Divorciado/a','Vivu/a']);
             $table->string('n_bi', 40)->unique();
             $table->string('nif', 40);
-            $table->text('foto');
-            $table->integer('provincia_id')->unsigned();
-            $table->foreign('provincia_id')->references('id')->on('provincias');
-            $table->date('data_registo');
+            $table->text('foto')->nullable();
             $table->integer('contacto_id')->unsigned();
             $table->foreign('contacto_id')->references('id')->on('contactos');
             $table->integer('user_id')->unsigned();

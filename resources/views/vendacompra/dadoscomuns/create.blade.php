@@ -5,7 +5,8 @@
   <li><a href="/">Início</a></li>
   <li class="active">...</li>
 </ol>
-<form>
+<form action="/dadospessoais/store" method="post">
+<input type="hidden" name="_token" value="{{ csrf_token() }}">
 <div class="row">
 <div class="col-xs-12 col-sm-2"></div>
 <div class="col-xs-12 col-sm-4">
@@ -16,7 +17,7 @@
   <div class="panel-body">
                  <div class="input-group input-sm">
     <span class="input-group-addon">Nome Completo</span>
-    <input id="mome" type="text" class="form-control" name="mone" placeholder="Obrigatório">
+    <input id="mome" type="text" class="form-control" name="nome" id="nome" placeholder="Obrigatório">
             </div>
             <div class="input-group input-sm">
     <span class="input-group-addon">Género</span>
@@ -36,7 +37,7 @@
 
             <div class="input-group input-sm">
                 <span class="input-group-addon">Estado Civil</span>
-                <select class="form-control input-sm" id="estado_civil">
+                <select class="form-control input-sm" id="estado_civil" name="estado_civil">
                         <option value="Solteiro/a">Solteiro/a</option>
                         <option value="Casado/a">Casado/a</option>
                         <option value="Divorciado/a">Divorciado/a</option>
@@ -78,7 +79,7 @@
 
   <div class="input-group input-sm">
     <span class="input-group-addon">Nº de Telemovel</span>
-        <input type="text" class="form-control small input-sm" id="nome" name="nome" placeholder="Ex: 9XXXXXXXX">
+        <input type="text" class="form-control small input-sm" id="telefone" name="telefone" placeholder="Ex: 9XXXXXXXX">
             </div>
 <div class="input-group input-sm">
     <span class="input-group-addon">Fixo</span>
@@ -87,7 +88,7 @@
 
             <div class="input-group input-sm">
     <span class="input-group-addon">E-mail</span>
-        <input type="email" class="form-control input-sm" id="fax" name="fax" placeholder="Ex: kilapymoney@gmail.com">
+        <input type="email" class="form-control input-sm" id="email" name="email" placeholder="Ex: kilapymoney@gmail.com">
             </div>
 
             <div class="input-group input-sm">
@@ -101,8 +102,8 @@
                              <div class="input-group input-sm">
     <span class="input-group-addon">Bairro</span>
 <select class="form-control input-sm" id="bairro" name="bairro">
-                         @foreach($provincias as $provincia)
-                            <option value="{{$provincia->id}}">{{$provincia->des_provincia}}</option>
+                         @foreach($bairros as $bairro)
+                            <option value="{{$bairro->id}}">{{$bairro->discricao_bairro}}</option>
                             @endforeach
                  </select>
                              </div>
@@ -110,14 +111,14 @@
                              <div class="input-group input-sm">
     <span class="input-group-addon">Municipio</span>
 <select class="form-control input-sm" id="municipio" name="municipio">
-                         @foreach($provincias as $provincia)
-                            <option value="{{$provincia->id}}">{{$provincia->des_provincia}}</option>
+                         @foreach($municipios as $municipio)
+                            <option value="{{$municipio->id}}">{{$municipio->discricao_municipio}}</option>
                             @endforeach
                  </select>
                              </div>
                                          <div class="input-group input-sm">
     <span class="input-group-addon">Informação extra</span>
-    <textarea class="form-control input-sm" id="fax" name="fax" placeholder="Ex: Casa de portão azul, email inactivo no momento, etc."></textarea>
+    <textarea class="form-control input-sm" id="tipo_residencia" name="tipo_residencia" placeholder="Ex: Casa de portão azul, email inactivo no momento, etc."></textarea>
             </div>
 </div>
   </div>
@@ -134,8 +135,7 @@
   <div class="panel-body">
 
 
-    <button type="button" class="btn btn-info"><i class="fa fa-floppy-o" aria-hidden="true"></i> Concluir Informação</button>
-
+    <button type="submit" class="btn btn-info"><i class="fa fa-floppy-o" aria-hidden="true"></i> Concluir Informação</button>
     <button type="button" class="btn btn-danger"><i class="fa fa-repeat" aria-hidden="true"></i>Concluir mas tarde</button>
 
 </div>

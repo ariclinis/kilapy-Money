@@ -17,6 +17,7 @@ Route::group(['middleware' => ['web']], function()
 {
 Route::get('/index','inicioUserNormal@index')->name('index');
 Route::get('/dadospessoais/create','DadoscomunsController@create')->name('create_dados_pessoais');
+Route::post('/dadospessoais/store','DadoscomunsController@store')->name('create_dados_pessoais');
 Route::post('/dadospessoais','DadoscomunsController@pegardados')->name('pegar_dados');
 });
 

@@ -1,26 +1,23 @@
 <?php namespace App\Http\Controllers;
-use App\tbl_estados;
+
 use Illuminate\Routing\Controller;
 
-class InicioUserNormal extends Controller {
+class Tbl_estados extends Controller {
 
 	/**
 	 * Display a listing of the resource.
-	 * GET /iniciousernormal
+	 * GET /tbl_estados
 	 *
 	 * @return Response
 	 */
 	public function index()
 	{
 		//
-		$user = \Auth::user();
-		dd($user);
-		return view('inicioUserNormal');
 	}
 
 	/**
 	 * Show the form for creating a new resource.
-	 * GET /iniciousernormal/create
+	 * GET /tbl_estados/create
 	 *
 	 * @return Response
 	 */
@@ -31,7 +28,7 @@ class InicioUserNormal extends Controller {
 
 	/**
 	 * Store a newly created resource in storage.
-	 * POST /iniciousernormal
+	 * POST /tbl_estados
 	 *
 	 * @return Response
 	 */
@@ -42,7 +39,7 @@ class InicioUserNormal extends Controller {
 
 	/**
 	 * Display the specified resource.
-	 * GET /iniciousernormal/{id}
+	 * GET /tbl_estados/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -54,7 +51,7 @@ class InicioUserNormal extends Controller {
 
 	/**
 	 * Show the form for editing the specified resource.
-	 * GET /iniciousernormal/{id}/edit
+	 * GET /tbl_estados/{id}/edit
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -66,7 +63,7 @@ class InicioUserNormal extends Controller {
 
 	/**
 	 * Update the specified resource in storage.
-	 * PUT /iniciousernormal/{id}
+	 * PUT /tbl_estados/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -78,7 +75,7 @@ class InicioUserNormal extends Controller {
 
 	/**
 	 * Remove the specified resource from storage.
-	 * DELETE /iniciousernormal/{id}
+	 * DELETE /tbl_estados/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
