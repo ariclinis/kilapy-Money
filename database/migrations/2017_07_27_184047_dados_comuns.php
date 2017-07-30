@@ -24,7 +24,6 @@ class DadosComuns extends Migration
             $table->string('nacionalidade', 40);
             $table->enum('estado_civil', ['Solteiro/a', 'Casado/a','Divorciado/a','Vivu/a']);
             $table->string('n_bi', 40)->unique();
-            $table->date('data_emissao');
             $table->string('nif', 40);
             $table->text('foto');
             $table->integer('provincia_id')->unsigned();
