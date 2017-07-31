@@ -5,6 +5,18 @@
   <li><a href="/">Início</a></li>
   <li class="active">...</li>
 </ol>
+<div class="panel-body">
+    @if(count($errors) > 0)
+        <div class="alert alert-danger">
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{$error}}</li>
+                @endforeach
+            </ul>
+
+        </div>
+    @endif
+</div>
 <form action="/dadospessoais/store" method="post">
 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 <div class="row">
@@ -88,7 +100,7 @@
 
             <div class="input-group input-sm">
     <span class="input-group-addon">E-mail</span>
-        <input type="email" class="form-control input-sm" id="email" name="email" placeholder="Ex: kilapymoney@gmail.com">
+        <input type="email" class="form-control input-sm" id="fax" name="fax" placeholder="Ex: kilapymoney@gmail.com">
             </div>
 
             <div class="input-group input-sm">

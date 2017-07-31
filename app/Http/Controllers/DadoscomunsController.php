@@ -57,31 +57,23 @@ class DadoscomunsController extends Controller
 
     public function store(Request $request)
     {
-        //calcular
-        $data = $request->data_nasc;
+        $dadoscomuns = new dados_comuns;
+        //validação do formulario
+        $this->validate($request, $dadoscomuns->rules, $dadoscomuns->messagens);
+        //calcular idade
+        $idade=$dadoscomuns->idade($request->data_nasc);
 
-// Separa em dia, mês e ano
-        list($ano, $mes, $dia) = explode('-', $data);
-
-// Descobre que dia é hoje e retorna a unix timestamp
-        $hoje = mktime(0, 0, 0, date('m'), date('d'), date('Y'));
-
-// Descobre a unix timestamp da data de nascimento do fulano
-        $nascimento = mktime( 0, 0, 0, $mes, $dia, $ano);
-
-// Depois apenas fazemos o cálculo já citado :)
-        $idade = floor((((($hoje - $nascimento) / 60) / 60) / 24) / 365.25);
 
 
         $user_logado =Auth::user()->id;
 
          $antepenultimo_id = contactos::all();
          $au_id=$antepenultimo_id->last()->id;
-         $dadoscomuns = new dados_comuns;
+
          $contactos = new contactos;
          $contactos->telefone =$request->telefone;
          $contactos->fixo =$request->fixo;
-         $contactos->fax =$request->email;
+         $contactos->fax =$request->fax;
          $contactos->provincia_id =$request->provincia;
          $contactos->bairro_id =$request->bairro;
          $contactos->tipo_residencia =$request->tipo_residencia;
