@@ -9,11 +9,11 @@
 
       <div class="list-group">
   <a href="#" class="list-group-item active">
-    <i class="fa fa-university" aria-hidden="true"> </i>  Minha Conta
+    <i class="fa fa-university" aria-hidden="true">  </i>   Operações
   </a>
-  <a href="#" class="list-group-item"><i class="fa fa-money" aria-hidden="true"></i> Conta corrente</a>
-  <a href="#" class="list-group-item"><i class="fa fa-pie-chart" aria-hidden="true"></i> Extrato de conta</a>
-  <a href="#" class="list-group-item"><i class="fa fa-pie-chart" aria-hidden="true"> </i>  Nossos Socios</a>
+  <a href="#" class="list-group-item"><i class="fa fa-money"aria-hidden="true"></i> Conta corrente  </a>
+  <a href="#" class="list-group-item"><i class="fa fa-pie-chart"aria-hidden="true"> </i> Extrato de conta  </a>
+  <a href="#" class="list-group-item"><i class="fa fa-users"aria-hidden="true"> </i> HelpLine</a>
  </div>
       
     </div>
@@ -105,7 +105,7 @@
     </div>
 
       <div class="well">
-        <p>ADS</p>
+        <p>Gravar Foto</p>
       </div>
       <div class="well">
         <p>ADS</p>
