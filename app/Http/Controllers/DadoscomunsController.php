@@ -39,13 +39,14 @@ class DadoscomunsController extends Controller
 
         //dd($provincias);
 
-
+            $user = \Auth::user();
+        //dd($user);
             $provincias = provincias::all();
             $municipios = municipios::all();
             $bairros = bairros::all();
             $estados = tbl_estados::all();
 
-        return view('vendacompra.dadoscomuns.create',compact('estados','provincias','bairros','municipios'));
+        return view('vendacompra.dadoscomuns.create',compact($user,'estados','provincias','bairros','municipios'));
     }
 
     /**
@@ -57,15 +58,13 @@ class DadoscomunsController extends Controller
 
     public function store(Request $request)
     {
+
         $dadoscomuns = new dados_comuns;
         //validação do formulario
         $this->validate($request, $dadoscomuns->rules, $dadoscomuns->messagens);
         //calcular idade
         $idade=$dadoscomuns->idade($request->data_nasc);
-
-
-
-        $user_logado =Auth::user()->id;
+         $user_logado =Auth::user()->id;
 
          $antepenultimo_id = contactos::all();
          $au_id=$antepenultimo_id->last()->id;
@@ -84,6 +83,7 @@ class DadoscomunsController extends Controller
          $u_id=$ultimo_id->last()->id;
 
              # code...
+         if($au_id<$u_id){
          $dadoscomuns->nome = $request->nome;
          $dadoscomuns->data_nasc = $request->data_nasc;
          $dadoscomuns->idade= $idade;
@@ -95,6 +95,9 @@ class DadoscomunsController extends Controller
          $dadoscomuns->contacto_id = $u_id;
          $dadoscomuns->user_id = $user_logado;
          $dadoscomuns->save();
+          return redirect()->route('index');
+         }
+
     }
 
     /**

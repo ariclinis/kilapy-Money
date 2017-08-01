@@ -10,8 +10,9 @@
         <div class="alert alert-danger">
             <ul>
                 @foreach($errors->all() as $error)
-                    <li>{{$error}}</li>
+                    <li style="float: left;">{{$error}}</li><br>
                 @endforeach
+
             </ul>
 
         </div>
@@ -138,6 +139,7 @@
 
   </div>
   <div class="row">
+    <input type="hidden" name="idade" id="idade">
   <div class="col-xs-12 col-sm-2"></div>
 <div class="col-xs-12 col-sm-8">
 

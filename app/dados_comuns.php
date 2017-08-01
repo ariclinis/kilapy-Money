@@ -11,18 +11,22 @@ class dados_comuns extends Model
     public $rules= [
              'nome' => 'required|max:255',
              'data_nasc' => 'required',
-             'n_bi' =>'required',
+             'n_bi' =>'required|max:14|min:14',
              'nif' => 'required',
              'telefone' =>'required',
              'fax' => 'required',
          ];
     public $messagens =[
-            'nome.required'=>'Preencha o Nome',
-            'data_nasc.required'=>'Preencha o Nome',
-            'n_bi.required'=>'Preencha o Nome',
-            'nif.required'=>'Preencha o Nome',
-            'telefone.required'=>'Preencha o Nome',
-            'fax.required'=>'Preencha o Nome',
+            'nome.required'=>'É necessário preencher sem nome',
+            'data_nasc.required'=>'É necessário preencher sua data de nascimento',
+            'n_bi.required'=>'É necessário preencher seu nº de identidade',
+            'n_bi.max'=>'Informações do bilhete inválida é necessário 14 digitos',
+            'n_bi.min'=>'Informações do bilhete inválida é necessário 14 digitos',
+            'n_bi.required'=>'É necessário preencher seu nº de identidade',
+            'nif.required'=>'É necessário preencher seu NIF',
+            'telefone.required'=>'É necessário preencher seu nº de telefone',
+            'fax.required'=>'É necessário preencher seu nº de e-mail',
+
          ];
 
     public function idade($data_enviada){

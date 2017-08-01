@@ -27,9 +27,21 @@ class dadoscomunsvalidacao extends FormRequest
              'nome' => 'required|max:255',
              'data_nasc' => 'required',
              'n_bi' =>'required',
-             'nif' => 'required'
+             'nif' => 'required',
              'telefone' =>'required',
              'fax' => 'required',
          ];
+    }
+    public function messages()
+    {
+        return [
+            'nome.required'=>'É necessário preencher sem nome',
+            'data_nasc.required'=>'É necessário preencher sua data de nascimento',
+            'n_bi.required'=>'É necessário preencher seu nº de identidade',
+            'nif.required'=>'É necessário preencher seu NIF',
+            'telefone.required'=>'É necessário preencher seu nº de telefone',
+            'fax.required'=>'É necessário preencher seu nº de e-mail',
+         ];
+
     }
 }
