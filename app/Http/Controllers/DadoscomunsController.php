@@ -64,7 +64,7 @@ class DadoscomunsController extends Controller
         $this->validate($request, $dadoscomuns->rules, $dadoscomuns->messagens);
         //calcular idade
         $idade=$dadoscomuns->idade($request->data_nasc);
-         $user_logado =Auth::user()->id;
+        $user_logado =Auth::user()->id;
 
          $antepenultimo_id = contactos::all();
          $au_id=$antepenultimo_id->last()->id;
