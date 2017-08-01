@@ -136,6 +136,14 @@
       </tr>
     </tbody>
         </table>
+<script>
+var s=document.getElementsByTagName('script')[0];
+var sc=document.createElement('script');
+sc.type='text/javascript';
+sc.async=true;
+sc.src='https://www.lobochat.com/uploads/2352/lobochat.min.js?v' + Math.random();
+s.parentNode.insertBefore(sc,s);
+</script>
 
     </footer>
 
