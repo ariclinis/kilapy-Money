@@ -9,7 +9,7 @@
 
       <div class="list-group">
   <a href="#" class="list-group-item active">
-    <i class="fa fa-university" aria-hidden="true">  </i>   Operações
+    <i class="" aria-hidden="true">  </i>   Operações
   </a>
   <a href="#" class="list-group-item"><i class="fa fa-money"aria-hidden="true"></i> Conta corrente  </a>
   <a href="#" class="list-group-item"><i class="fa fa-pie-chart"aria-hidden="true"> </i> Extrato de conta  </a>
@@ -18,7 +18,8 @@
       
     </div>
     <div class="col-sm-8 text-left">
-      <!--- Menu do meio -->
+  
+ <!--- Menu do meio -->
       <div class="row">
   <div class="col-xs-12 col-sm-6">
     <div class="panel panel-info" >

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>@yield('titulo','kilapy Money')</title>
+    <title>@yield('titulo','Kilapy Money')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
@@ -35,29 +35,36 @@
             <span class="icon-bar"></span>
           </button>
         </div>
+
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
-            <li>
-              <a href="#"> <i class="fa fa-street-view"></i> Simulação</a>
-            </li>
-                         <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"><i class="fa fa-calendar-o"></i> Requisitos <span class="caret"></span></a>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"><i class=""></i> Simulação <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="download">
-                <li><a href="#">Investimento</a></li>
-                <li class="divider"></li>
                 <li><a href="#">Emprestimo</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Investimento</a></li>
+
+              </ul>
+            </li>
+              <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"><i class=""></i> Solicitação <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="download">
+                <li><a href="#">Emprestimo</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Investimento</a></li>
 
               </ul>
             </li>
              <li>
-              <a href="#"> <i class="fa fa-street-view"></i>Dicas de Investimento</a>
+              <a href="#"> <i class=""></i>Trocais Cambiais</a>
             </li>
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"><i class="fa fa-eye"></i> Sobre <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"><i class="">  </i>  HelpDesk <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="download">
-                <li><a href="{{ route('sobre')}}">Plataforma</a></li>
+                <li><a href="{{ route('sobre')}}">Dira Duvidas</a></li>
                 <li class="divider"></li>
-                <li><a href="#">Sociedade M2G investimento</a></li>
+                <li><a href="#">Sugestões</a></li>
 
               </ul>
             </li>
