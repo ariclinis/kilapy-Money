@@ -13,20 +13,9 @@
   </a>
   <a href="#" class="list-group-item"><i class="fa fa-money" aria-hidden="true"></i> Conta corrente</a>
   <a href="#" class="list-group-item"><i class="fa fa-pie-chart" aria-hidden="true"></i> Extrato de conta</a>
-  <a href="#" class="list-group-item"><i class="fa fa-sitemap" aria-hidden="true"></i>
- 
-  <a href="#" class="list-group-item"><i class="fa fa-balanceA tua rede</a>-scale" aria-hidden="true"></i>Nossos Socios</a>
-</div>
-      <div class="list-group">
-  <a href="#" class="list-group-item active">
-    <i class="fa fa-university" aria-hidden="true"></i> Extrato de conta
-  </a>
-  <a href="#" class="list-group-item"><i class="fa fa-money" aria-hidden="true"></i> Investidores</a>
-  <a href="#" class="list-group-item"><i class="fa fa-pie-chart" aria-hidden="true"></i> Emprestimos</a>
-  <a href="#" class="list-group-item"><i class="fa fa-sitemap" aria-hidden="true"></i>
- A tua rede</a>
-  <a href="#" class="list-group-item"><i class="fa fa-balance-scale" aria-hidden="true"></i>Nossos Socios</a>
-</div>
+  <a href="#" class="list-group-item"><i class="fa fa-pie-chart" aria-hidden="true"> </i>  Nossos Socios</a>
+ </div>
+      
     </div>
     <div class="col-sm-8 text-left">
       <!--- Menu do meio -->
@@ -48,7 +37,7 @@
         <div class="panel-footer announcement-bottom">
           <div class="row">
             <div class="col-xs-8">
-              <font color="red">Concluir activação da conta.</font>
+              <font color="red"> Concluir activação da conta.</font>
             </div>
             <div class="col-xs-4 text-right">
               <i class="fa fa-hand-o-right" aria-hidden="true"></i>
