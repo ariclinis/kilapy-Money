@@ -6,7 +6,11 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Reset Password</div>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="{{ asset('./css/bootstrap.css')}}" media="screen">
+    <link rel="stylesheet" href="{{ asset('../assets/css/custom.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('./css/font-awesome.min.css')}}">
                 <div class="panel-body">
                     @if (session('status'))
                         <div class="alert alert-success">

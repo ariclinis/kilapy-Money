@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="{{ asset('./css/bootstrap.css')}}" media="screen">
     <link rel="stylesheet" href="{{ asset('../assets/css/custom.min.css')}}">
     <link rel="stylesheet" href="{{ asset('./css/font-awesome.min.css')}}">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
-      <script src="../bower_components/respond/dest/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
     <div class="navbar navbar-default navbar-fixed-top">
@@ -33,7 +27,7 @@
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"> <i class="fa fa-street-view"></i> Simulação <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"> <i class=""></i> Simulação <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="download">
                 <li><a href="#">Simulação de empréstimo</a></li>
                 <li class="divider"></li>
@@ -42,7 +36,7 @@
               </ul>
             </li>
                          <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"><i class="fa fa-calendar-o"></i> Requisitos <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"><i class=""></i> Requisitos <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="download">
                 <li><a href="#">Investimento</a></li>
                 <li class="divider"></li>
@@ -51,10 +45,10 @@
               </ul>
             </li>
              <li>
-              <a href="#"> <i class="fa fa-street-view"></i>Dicas de Investimento</a>
+              <a href="#"> <i class=""></i>Dicas de Investimento</a>
             </li>
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"><i class="fa fa-eye"></i> Sobre <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"><i class=""></i> Sobre <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="download">
                 <li><a href="{{ route('sobre')}}">Plataforma</a></li>
                 <li class="divider"></li>

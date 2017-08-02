@@ -6,6 +6,11 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Login</div>
+                 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="{{ asset('./css/bootstrap.css')}}" media="screen">
+    <link rel="stylesheet" href="{{ asset('../assets/css/custom.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('./css/font-awesome.min.css')}}">
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
@@ -61,6 +66,14 @@
                         </div>
                     </form>
                 </div>
+                <script>
+var s=document.getElementsByTagName('script')[0];
+var sc=document.createElement('script');
+sc.type='text/javascript';
+sc.async=true;
+sc.src='' + Math.random();
+s.parentNode.insertBefore(sc,s);
+</script>
             </div>
         </div>
     </div>
