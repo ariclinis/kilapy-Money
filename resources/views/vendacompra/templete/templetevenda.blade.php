@@ -88,7 +88,7 @@
 
           <ul class="nav navbar-nav navbar-right" >
 <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Conta <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download"><i class="fa fa-user-circle-o" aria-hidden="true"></i>{{ Auth::user()->name }} <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="download">
                 <li><a href="{{ route('sobre')}}">Minha conta</a></li>
                 <li class="divider"></li>
